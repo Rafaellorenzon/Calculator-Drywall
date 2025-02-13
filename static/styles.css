@@ -24,12 +24,14 @@ label, select, input, button {
 input {
     font-size: 16px;
     border-radius: 22px;
+    text-align: center;
 }
 
 select {
     font-size: 16px;
     margin-left: 3%;
     border-radius: 22px;
+    text-align: center;
 }
 
 button { 
