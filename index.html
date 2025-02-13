@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice de Drywall</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculatrice de Drywall</h2>
+        
+        <label for="chantier">Nom du Chantier:</label>
+        <input type="text" id="chantier">
+
+        <label for="largura">Largeur (m):</label>
+        <input type="number" id="largura" step="0.1" required>
+        
+        <label for="dimension">Hauteur/Profondeur (m):</label>
+        <input type="number" id="dimension" step="0.1">
+        
+        <label for="estrutura">Type de structure:</label>
+        <select id="estrutura">
+            <option value="Muro">Mur</option>
+            <option value="Teto">Plafond</option>
+        </select>
+        
+        <label for="faces">Faces: </label>
+        <select id="faces">
+            <option value="Uma Face">Mur, un seul côté</option>
+            <option value="Duas Faces">Mur normal, deux côtés</option>
+        </select>
+        
+        <label for="placa">Taille de plaque:</label>
+        <select id="placa">
+            <option value="2.6x0.6">260x60cm</option>
+            <option value="2.8x0.6">280x60cm</option>
+            <option value="3.0x0.6">300x60cm</option>
+            <option value="2.6x1.2">260x120cm</option>
+            <option value="2.8x1.2">280x120cm</option>
+            <option value="3.0x1.2">300x120cm</option>
+        </select>
+        
+        <label for="placa-faces">Nombre de faces (plaques)</label>
+        <select id="placa-faces">
+            <option value="1-face">Une plaque de gyproc</option>
+            <option value="2-face">Double plaque de gyproc</option>
+        </select>
+
+        <label for="placa-osb">Panneau OSB</label>
+        <select id="placa-osb">
+            <option value="0-osb">Aucun</option>
+            <option value="12mm-osb">OSB 12mm</option>
+            <option value="15mm-osb">OSB 15mm</option>
+            <option value="18mm-osb">OSB 18mm</option>
+            <option value="22mm-osb">OSB 22mm</option>
+        </select>
+
+        <label for="metal">Structure métallique (Taille du métal):</label>
+        <select id="metal">
+            <option value="240cm">240cm</option>
+            <option value="260cm">260cm</option>
+            <option value="280cm">280cm</option>
+            <option value="300cm">300cm</option>
+            <option value="320cm">320cm</option>
+        </select>
+
+        <label for="lisse">Taille de metal stud horizontal:</label>
+        <select id="lisse">
+            <option value="3m">3m</option>
+            <option value="4m">4m</option>
+        </select>
+
+        <div class="button-agroup">
+            <button onclick="calcularMateriaux(false)">Calculer</button>
+            <button onclick="calcularMateriaux(true)">Enregistrer en PDF</button>
+        </div>
+
+
+        <div class="resultado-calculadora" id="resultado"></div>
+    </div>
+    
+    <script>
+
+    </script>
+</body>
+</html>

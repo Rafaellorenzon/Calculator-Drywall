@@ -1,0 +1,68 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 20px; }
+
+.container { 
+    max-width: 600px; 
+    border-radius: 50px;
+    border: 2px solid rgb(102, 101, 101);
+    margin: auto; 
+    padding: 20px; 
+}
+
+h2 {
+    font-size: 24px;
+}
+
+label, select, input, button { 
+    margin: 10px 0; 
+    display: block; 
+    width: 95%; 
+}
+
+input {
+    font-size: 16px;
+    border-radius: 22px;
+}
+
+select {
+    font-size: 16px;
+    margin-left: 3%;
+    border-radius: 22px;
+}
+
+button { 
+    position: relative;
+    padding: 8px 10px; 
+    background-color: #7157e6; 
+    color: white; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-size: 16px;
+    margin-left: 3%;
+}
+    
+button:hover { 
+    background-color: #8e79ec; 
+}
+
+.button-agroup {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+#resultado { 
+    margin-top: 20px; 
+    white-space: pre-line; 
+    text-align: left;
+    margin-left: 20%;
+
+}
+
+.resultado-calculadora {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10%;
+}
