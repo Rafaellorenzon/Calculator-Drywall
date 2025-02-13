@@ -25,12 +25,14 @@ input {
     font-size: 16px;
     border-radius: 22px;
     text-align: center;
+    text-align: center;
 }
 
 select {
     font-size: 16px;
     margin-left: 3%;
     border-radius: 22px;
+    text-align: center;
     text-align: center;
 }
 
