@@ -20,14 +20,16 @@ function calcularMateriaux(sauvegarder) {
 
 
     let plaquesNecessaires;
-    if (placaFaces === "2-face") {
+    let basePlacas = Math.ceil(area / (placa[0] * placa[1]));
+    plaquesNecessaires = basePlacas;
 
-        let primeiraCamada = Math.ceil(largura / (placa[1] / 100));
-        let segundaCamada = Math.ceil(largura / ((placa[0] - 60) / 100));
-        plaquesNecessaires = (primeiraCamada + segundaCamada) * 2; 
-    } else {
-        plaquesNecessaires = Math.ceil(area / (placa[0] * placa[1])) * (isDupla && !isTeto ? 2 : 1); 
+    if (!isTeto && isDupla) {
+        plaquesNecessaires *= 2;
     }
+    if (placaFaces === "2-face") {
+        plaquesNecessaires *= 2;
+    }
+
 
     let espacamento = isTeto ? 40 : 60;
     let metauxNecessaires = Math.ceil(largura / (espacamento / 100));

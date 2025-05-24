@@ -1,72 +1,85 @@
 body { 
-    font-family: Arial, sans-serif; 
-    text-align: center; 
-    margin: 20px; }
+    font-family: "Segoe UI", Arial, sans-serif; 
+    background-color: #f5f5fa;
+    margin: 0;
+    padding: 20px;
+}
 
 .container { 
-    max-width: 600px; 
-    border-radius: 50px;
-    border: 2px solid rgb(102, 101, 101);
+    max-width: 650px; 
+    border-radius: 20px;
+    border: 1px solid #ccc;
     margin: auto; 
-    padding: 20px; 
+    padding: 30px 25px; 
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
 }
 
-label, select, input, button { 
-    margin: 10px 0; 
-    display: block; 
-    width: 95%; 
+label {
+    font-weight: bold;
+    text-align: left;
+    margin: 12px 0 5px 0;
+    display: block;
+    color: #444;
 }
 
-input {
+select, input {
     font-size: 16px;
-    border-radius: 22px;
-    text-align: center;
-    text-align: center;
-}
-
-select {
-    font-size: 16px;
-    margin-left: 3%;
-    border-radius: 22px;
-    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
     text-align: center;
 }
 
 button { 
-    position: relative;
-    padding: 8px 10px; 
-    background-color: #7157e6; 
+    padding: 10px 16px; 
+    background-color: #6a5acd; 
     color: white; 
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer; 
     font-size: 16px;
-    margin-left: 3%;
+    margin: 8px 4px;
+    transition: background-color 0.3s;
 }
-    
+
 button:hover { 
-    background-color: #8e79ec; 
+    background-color: #8470ff; 
 }
 
 .button-agroup {
-    margin-top: 15%;
-    margin-bottom: 10%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #resultado { 
-    margin-top: 20px; 
-    white-space: pre-line; 
+    margin-top: 30px; 
+    white-space: pre-wrap; 
     text-align: left;
-    margin-left: 20%;
-
+    background-color: #f8f8ff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-family: monospace;
+    text-align: center;
 }
 
 .resultado-calculadora {
     font-size: 16px;
-    text-align: center;
-    margin-bottom: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
